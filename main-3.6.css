@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: courier;
+  color: #000;
+  background-color: #fffcf0;
+}
+
+.center {
+	text-align: center;
+}
+
+    /* Main Nav */
+
+nav
+{
+  width: 100%;
+  background: #D2C79B;
+  font-weight: bold;
+}
+
+header a {
+  float: left;
+  padding-top: 10px;
+  padding-left: 5%;
+  font-size: 2em;
+  text-decoration: none;
+  color: #000;
+
+}
+ul
+{
+  width: 80%;
+  margin:0 auto;
+  padding:0;
+  text-align: right;
+}
+ul li
+{
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  font-weight: normal;
+  opacity: 0.5;
+}
+ul li:hover
+{
+  background: #fff;
+}
+ul li a
+{
+  color: #000;
+  text-decoration: none;
+}
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: right;
+  box-sizing: border-box;
+  color: #000;
+  background: #B8B08E;
+  font-size: 30px;
+  display: none;
+}
+
+/* Home */
+
+.profile {
+  max-height: 20em;
+  border-radius: 50%;
+  margin-right: 150px;
+}
+
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 225px;
+  margin-bottom: 100px;
+}
+
+.intro {
+  font-size: 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.arrow {
+  height: 50px;
+  width: 100%;
+  padding-top: 15px;
+	padding-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+/* About */
+
+.about {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+    padding-top: 2.5%;
+    padding-left: 5%;
+}
+
+.about-me {
+	font-size: 1.5em;
+	padding: 2.5% 20% 0 20%;
+}
+
+.about-me p {
+  font-size: 2em;
+}
+.about-sections {
+		padding-right: 10%;
+		text-align: center;
+}
+
+.about-icons {
+		max-height: 5em;
+}
+
+/*Skills*/
+
+.title {
+  font-size: 3.5em;
+  padding: 100px 0 50px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.skills {
+  height: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.skills img {
+    max-height: 300px;
+    padding: 5%;
+}
+
+    /*Footer*/
+
+footer {
+  position: sticky;
+  width: 100%;
+  background-color: #e6daaa;
+}
+
+.footer {
+  padding: 0 110px 0 110px;
+  display: flex;
+  justify-content: space-between;
+	flex-direction: column;
+}
+
+.arrow {
+  height: 4em;
+  min-height: 200px;
+  width: 100%;
+  padding-top: 50px;
+	padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#top-button {
+    height: 2.5em;
+  }
+
+.social {
+  display: flex;
+  flex-direction: row;
+	justify-content: center;
+  padding-top: 10px;
+}
+
+.logo {
+  padding: 0 10px 0 10px;
+  height: 7.5em;
+  width: 5em;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+
+                          /* Media Queries */
+
+
+@media (max-width:768px)
+{
+
+      /* Main Nav */
+.toggle
+    {
+      display: block;
+      background-color: #e6daaa;
+    }
+
+ul
+      {
+      width: 100%;
+      display: none;
+      }
+ul li
+      {
+      display: block;
+      text-align: center;
+  }
+.active
+  {
+    display: block;
+  }
+
+  /* Home */
+
+.profile {
+  max-height: 15em;
+  margin: auto;
+  padding: 0;
+}
+
+.main {
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+
+}
+
+.intro {
+  font-size: 1em;
+}
+
+    /* About */
+
+	.about-me {
+		padding: 10% 5% 0 5%;
+	}
+
+  .about-me p {
+    font-size: .8em;
+  }
+
+	.about {
+		font-size: .7em;
+	  padding: 10% 0 10% 5%;
+	}
+
+	.about-icons {
+		max-height: 4em;
+	}
+
+    /* Skills */
+
+  #skills {
+    margin-bottom: 5%;
+  }
+
+  .title {
+    height: 2em;
+    padding: 40px 0 50px 0;
+  }
+
+  .skills img {
+      max-height: 100px;
+      padding: 5%;
+  }
+
+    /* Footer */
+
+  footer {
+    padding-bottom: 25px;
+  }
+.footer {
+    justify-content: center;
+  }
+
+.arrow {
+    height: 5em;
+    min-height: 0;
+    padding: 10px 0 10px 0;
+  }
+
+.logo {
+    height: 60px;
+    padding: 0 10px 0 10px;
+  }
+#top-text {
+    display: none;
+  }
+
+#top-button {
+    padding: 0 20px 0 20px;
+    margin: 0 50px 0 50px;
+  }
+}
